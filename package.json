@@ -1,0 +1,12 @@
+{
+  "name": "lms-screenshots",
+  "version": "1.0.0",
+  "description": "Capture screenshots for LibraryManagementSystem SVG placeholders",
+  "private": true,
+  "scripts": {
+    "capture": "node capture.js"
+  },
+  "dependencies": {
+    "puppeteer": "^20.9.0"
+  }
+}

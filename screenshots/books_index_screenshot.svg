@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect x="40" y="30" width="1120" height="60" rx="8" fill="#1a202c" />
+  <text x="70" y="70" fill="#fff" font-family="Segoe UI, Arial, sans-serif" font-size="24">Library Management System — Books</text>
+
+  <rect x="40" y="110" width="1120" height="620" rx="8" fill="#f7fafc" stroke="#e2e8f0" />
+  <text x="70" y="150" fill="#2d3748" font-family="Segoe UI, Arial, sans-serif" font-size="18">Books Index</text>
+
+  <rect x="70" y="180" width="1040" height="60" rx="6" fill="#fff" stroke="#e2e8f0" />
+  <text x="90" y="220" fill="#4a5568" font-family="Segoe UI, Arial, sans-serif" font-size="14">Search / Filter bar</text>
+
+  <!-- table header -->
+  <rect x="70" y="260" width="1040" height="40" fill="#edf2f7" />
+  <text x="90" y="288" fill="#2d3748" font-family="Segoe UI, Arial, sans-serif" font-size="14">Title</text>
+  <text x="540" y="288" fill="#2d3748" font-family="Segoe UI, Arial, sans-serif" font-size="14">Author</text>
+  <text x="840" y="288" fill="#2d3748" font-family="Segoe UI, Arial, sans-serif" font-size="14">Status</text>
+
+  <!-- rows -->
+  <rect x="70" y="300" width="1040" height="40" fill="#fff" />
+  <text x="90" y="328" fill="#4a5568" font-family="Segoe UI, Arial, sans-serif" font-size="14">The Hobbit</text>
+  <text x="540" y="328" fill="#4a5568" font-family="Segoe UI, Arial, sans-serif" font-size="14">J.R.R. Tolkien</text>
+  <text x="840" y="328" fill="#38a169" font-family="Segoe UI, Arial, sans-serif" font-size="14">Available</text>
+
+  <rect x="70" y="340" width="1040" height="40" fill="#fff" />
+  <text x="90" y="368" fill="#4a5568" font-family="Segoe UI, Arial, sans-serif" font-size="14">Clean Code</text>
+  <text x="540" y="368" fill="#4a5568" font-family="Segoe UI, Arial, sans-serif" font-size="14">Robert C. Martin</text>
+  <text x="840" y="368" fill="#e53e3e" font-family="Segoe UI, Arial, sans-serif" font-size="14">Borrowed</text>
+
+  <rect x="70" y="420" width="1040" height="360" fill="#fff" stroke="#e2e8f0" />
+  <text x="90" y="460" fill="#718096" font-family="Segoe UI, Arial, sans-serif" font-size="13">(more rows...)</text>
+</svg>
