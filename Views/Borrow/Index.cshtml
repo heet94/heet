@@ -1,0 +1,48 @@
+@model IEnumerable<LibraryManagementSystem.Models.BorrowRecord>
+@{
+    ViewData["Title"] = "Borrow Records";
+}
+<div class="container mt-4">
+    <h2>📘 Borrow Records</h2>
+    <a asp-action="Create" class="btn btn-success mb-3">➕ Borrow Book</a>
+
+    <table class="table table-hover table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Member</th>
+                <th>Book</th>
+                <th>Borrowed</th>
+                <th>Due</th>
+                <th>Returned</th>
+                <th>Fine</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Member.FullName</td>
+                    <td>@item.Book.Title</td>
+                    <td>@item.BorrowDate.ToShortDateString()</td>
+                    <td>@item.DueDate.ToShortDateString()</td>
+                    <td>@(item.ReturnDate?.ToShortDateString() ?? "Not Returned")</td>
+                    <td>$@item.FineAmount</td>
+                    <td>
+                        @if (item.ReturnDate == null)
+                        {
+                            <form asp-action="ReturnBook" method="post">
+                                <input type="hidden" name="id" value="@item.Id" />
+                                <button class="btn btn-sm btn-warning">Return</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <span class="text-success">Returned</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
